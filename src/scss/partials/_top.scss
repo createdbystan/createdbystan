@@ -1,0 +1,114 @@
+@use 'variables';
+
+.fullscreen {
+  background-color: $dark-bg-color;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+  
+.logo {
+  width: 100%;
+  max-width: 400px;
+}
+  
+#scrollto-about {
+  font-size: 24px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: $basic-color;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  z-index: 100;
+}
+  
+#scrollto-about:hover {
+  color: $hover-color;
+  transition: 0.5s;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 999999;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  padding: 0 15px 5px 15px;
+  background: transparent;
+  transition: 0.3s;
+
+  .openbtn {
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+  }
+  
+  .openbtn:hover {
+    color: $hover-color;
+    transition: 0.5s;
+  }
+}
+  
+.sidenav {
+  font-family: $primary-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  
+  a {
+    padding: 10px 10px 10px 40px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #f1f1f1;
+    transition: 0.5s;
+  }
+  
+  a.active {
+    color: #fff;
+  }
+  
+  .closebtn {
+    font-size: 24px;
+    color: #818181;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  
+  .closebtn:hover {
+    color: #fff;
+    transition: 0.5s;
+  }
+}

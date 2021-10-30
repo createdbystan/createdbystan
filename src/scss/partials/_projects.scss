@@ -1,0 +1,55 @@
+@use 'variables';
+
+.project-card {
+  padding: 0 30px 0 0;
+  margin-bottom: 60px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+}
+  
+.project-logo {
+  width: 30%;
+  color: $basic-color;
+  padding-right: 30px;
+  
+  img {
+    border-radius: 50%;
+    opacity: 0.9;
+    width: 100%;
+  }
+}
+  
+.project-content {
+  width: 70%;
+  
+  h4 {
+    font-family: $secondary-font;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 10px 20px 30px 20px;
+  }
+  
+  p {
+    margin: 10px 20px 30px 20px;
+  }
+  
+  a {
+    font-family: $primary-font;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: $basic-color;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 50px;
+    margin: 10px 20px 30px 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  a:hover {
+    background: $hover-color;
+    color: #fff;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,56 @@
+@use 'variables';
+
+.contact-group {
+  position: relative;
+  margin-bottom: 50px;
+
+  input, 
+  textarea {
+    font-size: 13px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    color: $basic-color;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  
+  label {
+    color: darkgray;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+  }
+  
+  input:focus ~ label,
+  input:valid ~ label,
+  textarea:focus ~ label,
+  textarea:valid ~ label {
+    display: none;
+  }
+  
+  input[type="submit"] {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background-color: $basic-color;
+    width: auto;
+    padding: 10px 50px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+    cursor: pointer;
+   }
+  
+  input[type="submit"]:hover {
+    background: $hover-color;
+    color: #fff;
+    transition: 0.5s;
+  }
+}
